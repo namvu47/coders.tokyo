@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO list</title>
+</head>
+<body>
+	<ul id = 'todo-list'>
+		<!-- <li>Take a shower</li>
+		<li>Read a book</li>
+		<li>Go to bed</li> -->
+	</ul>
+
+	<script type="text/javascript">
+		var todoList = [
+			'Take a shower',
+			'Have a Walk',
+			'Go to bed'
+		];
+
+		var htmlList = document.getElementById('todo-list');
+
+		var content = todoList.map (function (x) {
+			return '<li>'+ x + '</li>';
+		});
+
+
+		htmlList.innerHTML = content.join('');
+
+	</script>
+
+	<!-- CLI (command line interface) -> web interface -->
+	
+</body>
+</html>
