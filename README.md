@@ -1,2 +1,2 @@
 # coders.tokyo
-Lessons and Exercise from Coders.Tokyo School
+Lessons and Exercises from Coders.Tokyo School
