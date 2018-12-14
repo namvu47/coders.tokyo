@@ -1,0 +1,26 @@
+<!-- // 1. Sử dụng axios để tải nội dung dưới dạng json từ đường link sau về và hiển ra trình duyệt sử dụng document.write
+// Link: https://randomuser.me/api/
+// Có thể tìm link tới thư viện axios tại: https://cdnjs.com/
+// Để thêm thư viện vào jsfiddle, nhấn vào Resources ở cột trái, nhập link vào rồi ấn (+)
+// 2. Làm tương tự, thay vì dùng axios, hãy dùng fetch (google để biết cách dùng) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript">
+		var url = 'https://randomuser.me/api/';
+		axios.get(url).then(function (res) {
+			var items = res.data;
+			document.write('Info: ', JSON.stringify(items.info));
+			document.write('Results: ', JSON.stringify(items.results));
+		})
+
+	</script>
+</body>
+</html>
