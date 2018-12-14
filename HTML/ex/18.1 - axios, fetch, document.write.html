@@ -15,11 +15,18 @@
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript">
 		var url = 'https://randomuser.me/api/';
+
 		axios.get(url).then(function (res) {
 			var items = res.data;
 			document.write('Info: ', JSON.stringify(items.info));
 			document.write('Results: ', JSON.stringify(items.results));
 		})
+
+		// fetch(url).then(function (res) {
+		// 	return res.json();
+		// }).then(function (myJson) {
+		// 	document.write('Fetch: ', JSON.stringify(myJson));
+		// })
 
 	</script>
 </body>
