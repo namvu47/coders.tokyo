@@ -1,8 +1,8 @@
 git init
 git status
 
-git add
-git commit
+git add <filename>
+git commit -m 'description'
 
 git show (commit ID)
 git log
@@ -12,3 +12,14 @@ git diff
 working dir: file modified, not yet add
 staging area: file waiting for git commit
 git repo: saved commited file
+
+git checkout -- filename: discard changes in working dir
+git reset HEAD filename: unstage
+
+// git checkout -b feature/dog-class (branching)
+// git checkout <branch name>
+// git merge
+A <--- B
+git checkout A
+git merge B
+// git branch -D <branch name> // delete branch
