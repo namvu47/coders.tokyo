@@ -23,3 +23,12 @@ A <--- B
 git checkout A
 git merge B
 // git branch -D <branch name> // delete branch
+
+
+get reset --soft <commit> // --> staging area
+get reset --mixed <commit> // --> working dir
+git reset --hard <commit>
+
+git revert <commit>
+
+.gitignore
