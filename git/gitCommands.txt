@@ -10,7 +10,7 @@ git diff
 
 
 working dir: file modified, not yet add
-staging area: file waiting for git commit
+staging area: file added, waiting for git commit
 git repo: saved commited file
 
 git checkout -- filename: discard changes in working dir
