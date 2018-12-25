@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TODO list</title>
+</head>
+<body>
+  <input id = 'new-item' type="text" name="input">
+  <button id = "add-btn">ADD</button>
+
+  <ul id = 'todo-list'>
+    
+  </ul>
+
+  <script type="text/javascript">
+    var storageKey = 'todoList';
+    var dataString = localStorage.getItem(storageKey);
+    var htmlList = document.getElementById('todo-list');
+    var addButn = document.getElementById("add-btn");
+
+    // addButn.onclick = addItem;
+    addButn.addEventListener('click',addItem);
+    htmlList.addEventListener('click', onListClick);
+
+    var todoList;
+
+    if (dataString) {
+      todoList = JSON.parse(dataString)
+    } else {
+      todoList = [];
+    }
+    
+    function onListClick(event) {
+      var bttn = event.target;
+      var index = parseInt(bttn.dataset.id);
+      todoList.splice(index,1);
+      render();
+      localStorage.setItem(storageKey, JSON.stringify(todoList));
+    }
+    
+
+    function addItem() {
+      // get value of input
+      var input = document.getElementById('new-item');
+      var newItem = input.value;
+      // add to todoList array
+      todoList.push(newItem);
+      // re-render
+      render();
+      //clear input
+      input.value = "";
+      // store data
+      localStorage.setItem(storageKey, JSON.stringify(todoList));
+    }
+    function render() {
+      
+      var content = todoList.map (function (x, index) {
+        return '<li>'+ x + ' <button data-id=" ' + index + ' "> Del </button> </li>';
+      });
+      htmlList.innerHTML = content.join('');
+    }
+    
+    render();
+    
+  </script>
+
+  <!-- CLI (command line interface) -> web interface -->
+  
+</body>
+</html>
