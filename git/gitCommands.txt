@@ -1,4 +1,6 @@
 //github, gitlab, bitbucket
+// https://www.atlassian.com/git/tutorials
+// http://rogerdudler.github.io/git-guide/
 
 git init
 git status
