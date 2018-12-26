@@ -59,9 +59,14 @@ When will conflicts happen?
 Method 1: 
   1. using 'git rebase'
   2. resolve conflicts
-  3. push again wit -f
+  3. push again wit -f (do not -f to master or branch that many people working on)
   
 Method 2: 
   1. Merge update master to feature branch (3-way merge)
   2. Resolve conflict
   3. Commit and push
+  git checkout master // switch branch
+  git pull 
+  git checkout feature/mouse-run
+  git merge master --> open file, fix file resolve conflict
+  
