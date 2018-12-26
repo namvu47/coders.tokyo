@@ -50,3 +50,18 @@ git pull // pull repo changes
   4.2. fetch branch into local to test offline (optional)
   4.3. approve pull request
 5. merge to master
+
+// Resolve conflicts:
+When will conflicts happen?
+  1. Change same file + same line
+  2. modify a deleted file
+
+Method 1: 
+  1. using 'git rebase'
+  2. resolve conflicts
+  3. push again wit -f
+  
+Method 2: 
+  1. Merge update master to feature branch (3-way merge)
+  2. Resolve conflict
+  3. Commit and push
