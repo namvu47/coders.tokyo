@@ -1,6 +1,6 @@
 #position
 static*
-relative
-fixed
+relative: di chuyển tương đối so với vị trí ban đầu
+fixed: tách khỏi flow, có vị trí tương đối so với cửa sổ trình duyệt
 absolute
 sticky: 
