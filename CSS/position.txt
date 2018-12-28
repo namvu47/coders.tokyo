@@ -1,6 +1,0 @@
-#position
-static*
-relative: di chuyển tương đối so với vị trí ban đầu
-fixed: tách khỏi flow, có vị trí tương đối so với cửa sổ trình duyệt (ví dụ: nút cuộn lên ở góc phải dưới của trang)
-absolute: căn chỉnh theo element gần nhất có POSITION: RELATIVE, nếu k có element nào sẽ căn theo body (giống fixed)
-sticky: 
