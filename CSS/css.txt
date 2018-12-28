@@ -1,0 +1,8 @@
+# CSS Selector
+  .class
+  #id
+  descendant selector: .list-2 .item (format element with class "item" in class "list-2") - also apply to child of class item
+  child selector: .list-2 > .item (find in list-2, CHILD with class "item")
+  adjacent sibling selector: .list-2 .item-1 + .item (only select ONE next sibling)
+  general siblign selector: .list-2 .item-1 ~ .item (select ALL next sibling)
+  
