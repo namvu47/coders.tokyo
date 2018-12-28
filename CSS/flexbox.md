@@ -1,6 +1,7 @@
 # Flexbox
 
 1. **parent element**
+
 `.container {
   display: flex;
   flex-direction: row | column | row-reverse | column-reverse;
