@@ -1,5 +1,6 @@
 # CSS Selector
 
+1. Element Selector
 - .class
 - #id
 - *descendant selector*: 
@@ -11,3 +12,9 @@
 - *general siblign selector*: 
 `.list-2 .item-1 ~ .item` (select ALL next sibling)
   
+2. Attribute Selector
+- input[type='text'] {
+  border: 1px solid red;
+}
+- google css selector cheat sheet
+- https://gist.github.com/magicznyleszek/809a69dd05e1d5f12d01
