@@ -11,7 +11,8 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 .header 
 .footer {
   grid-column: 1/3
-} ```
+} 
+```
 
 ### component.css
 `put all component code to this file.`
