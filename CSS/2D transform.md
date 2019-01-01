@@ -1,10 +1,13 @@
-# CSS 2D Transform
+# CSS Transition
 
-1. translate (X,Y)
-2. rotate (30deg)
-3. scale (0.5)
-4. skew
-5. matrix
+1. 2D Transform
+- translate (X,Y)
+- rotate (30deg)
+- scale (0.5)
+- skew
+- matrix
 
 ### References
 https://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+
+2. Transition
