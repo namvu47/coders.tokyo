@@ -12,8 +12,8 @@ https://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 ### 2. Transition
 - https://easings.net/
-
-`.button {
+`
+.button {
 	text-decoration: none;
 	font-family: Arial, sans-serif;
 	color: #333;
@@ -26,4 +26,5 @@ https://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 .button:hover {
 	background-color: #a00808;
 	color: #FFF;
-}`
+}
+`
