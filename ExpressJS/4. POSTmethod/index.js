@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 
 var users = [
 	{ id: 1, name: "Mint" },
-	{ id: 2, name: "Big" }
+	{ id: 2, name: "Big" },
+	{ id: 3, name: "Pub" }
 ];
 
 app.get('/', (req, res) => res.render('index',{
