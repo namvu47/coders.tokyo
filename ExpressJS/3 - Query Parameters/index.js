@@ -20,9 +20,9 @@ app.get('/users', (req, res) => res.render('users/index', {
 
 app.get('/users/search', function (req, res) {
 	var q = req.query.q;
-	var matchedUser = users.filter(function (user) {
-		return user.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
-	});
+	var matchedUser = users.filter( user =>
+		user.name.toLowerCase().indexOf(q.toLowerCase()) !== -1
+	);
 
 	res.render('users/index', {
 		users: matchedUser
