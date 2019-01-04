@@ -31,7 +31,7 @@ app.get('/users', (req, res) => res.render('users/index', {
 
 app.get('/users/search', function (req, res) {
 	var q = req.query.q;
-	var matchedUser = users.filter( user =>
+	var matchedUser = db.get('users').value().filter( user =>
 		user.name.toLowerCase().indexOf(q.toLowerCase()) !== -1
 	);
 
