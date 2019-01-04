@@ -1,4 +1,4 @@
-const express = require ('express');
+const express = require('express');
 const app = express();
 const port = 3000;
 
@@ -30,4 +30,4 @@ app.get('/users/search', function (req, res) {
 
 });
 
-app.listen (port, () => console.log('Server listening at port: ' + port));
+app.listen(port, () => console.log('Server listening at port: ' + port));
