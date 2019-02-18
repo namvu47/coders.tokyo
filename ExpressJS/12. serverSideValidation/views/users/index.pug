@@ -1,20 +1,37 @@
 extends ../layout/common.pug
 
 block content
+<<<<<<< HEAD
 	h1 Users
 	
 	.d-flex.align-items-center
 		a.btn.btn-primary.mb-2(href="/users/create") New
 
+=======
+	h1
+		span.mr-3 Users
+		a.btn.btn-primary.mb-2(href="/users/create") New
+
+	.d-flex.align-items-center
+>>>>>>> 78454e179fc385818b7d30cdca1601c390c55fe9
 		form.ml-auto(action= '/users/search', method='GET', class="d-flex")
 			input(type = "text", name='q', class="form-control")
 			button(class="btn btn-primary ml-2") Search
 
+<<<<<<< HEAD
 	table.table
 		tr
 			th Name
 			th Phone
 			th Actions
+=======
+	table.table.table-hover
+		tr
+			td Name
+			td Phone
+			td Action
+
+>>>>>>> 78454e179fc385818b7d30cdca1601c390c55fe9
 		each user in users
 			tr
 				td= user.name 

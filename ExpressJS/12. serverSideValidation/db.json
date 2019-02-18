@@ -7,6 +7,7 @@
     {
       "name": "Russel",
       "id": "5yc5kIpsT"
+<<<<<<< HEAD
     },
     {
       "name": "",
@@ -17,6 +18,8 @@
       "name": "Big",
       "phone": "",
       "id": "XuQPhzgPv"
+=======
+>>>>>>> 78454e179fc385818b7d30cdca1601c390c55fe9
     }
   ]
 }

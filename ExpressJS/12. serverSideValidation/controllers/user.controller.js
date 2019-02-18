@@ -34,6 +34,7 @@ module.exports.get = function (req, res) {
 
 module.exports.postCreate = function (req, res) {
 	req.body.id = shortid.generate();
+<<<<<<< HEAD
 	var errors = [];
 	if (!req.body.name) {
 		errors.push ("Name required")
@@ -48,6 +49,8 @@ module.exports.postCreate = function (req, res) {
 		});
 		return;
 	};
+=======
+>>>>>>> 78454e179fc385818b7d30cdca1601c390c55fe9
 	db.get('users').push(req.body).write();
 	res.redirect('/users');
 	// res.send(db.get('users'));
